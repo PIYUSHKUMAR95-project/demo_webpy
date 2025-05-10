@@ -7,6 +7,11 @@ st.markdown("I love python")
 st.code("""for i in range(1,5,1):
                 print("Hello")
         """)
+import pandas as pd
+
+dataset1 = pd.read_csv("EXCEL_PRACTICE_20_MARCH_2025.csv")
+
+st.dataframe(dataset1)
 
 name = st.text_input("Enter your name")
 fname = st.text_input("Enter your Father's name")
